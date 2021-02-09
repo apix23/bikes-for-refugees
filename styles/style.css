@@ -6,6 +6,7 @@
  * Class: Scotland 2017
  */
 
+
 html,
 body {
 	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
@@ -66,6 +67,8 @@ button {
 /* Jumbotron */
 .jumbotron {
 	border-radius: 0;
+	background: rgba(0, 0, 0, .3);
+	background-image: url("/bikes-for-refugees/images/header-bike.jpg");
 }
 
 /* Headings */
@@ -95,6 +98,16 @@ button {
 	margin-bottom: 2em;
 }
 
+.btn:hover,
+.btn:focus {
+	background: #ef7f52;
+}
+
+div.container .btn:last-child:hover,
+div.container .btn:last-child:focus{
+	background-color: royalblue;
+}
+
 .article__title {
 	margin-bottom: 0.5em;
 	font-weight: 700;
@@ -119,6 +132,33 @@ button {
 .article__read-more:last-child {
 	margin-bottom: 0;
 }
+
+section{
+	display: flex;
+}
+
+section article{
+	padding: 20px;
+}
+section article:first-child{
+	background-color: #aaaaaa;
+}
+
+.sidebar article{
+	display: flex;
+}
+
+.sidebar h6{
+	font-size: 15px;
+}
+
+.sidebar p {
+	font-size: 12px;
+}
+.sidebar img{
+	width: 120px;
+}
+
 
 /* Footer */
 .footer {
